@@ -52,17 +52,16 @@
 .service-link{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:10px 13px;border:1px solid #b6a883;color:#715c3d;font-size:9px;white-space:nowrap;transition:background .2s,color .2s}
 .service-link:hover,.service-link:focus-visible{background:#e9e2d1;color:#4b3c29}
 .service-link:focus-visible{outline:2px solid #a44736;outline-offset:3px}
-.reading-guide{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.reading-step{padding:14px 16px 15px;background:rgba(250,248,241,.55);border-top:1px solid #d1c6aa}
-.guide-number{color:#9b7650;font-size:7px;font-weight:600;letter-spacing:.13em}
+.reading-guide{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.reading-step{padding:17px 18px 18px;background:rgba(250,248,241,.68);border:1px solid #ded9ca;border-top:2px solid #b6a883;min-height:137px}
+.guide-number{color:#9b7650;font-size:8px;font-weight:600;letter-spacing:.13em}
 .guide-number i{font-style:normal;color:#b7ad98}
-.reading-step h3{margin:7px 0 5px;color:#31483a;font:500 15px/1.35 var(--serif)}
-.reading-step p{margin:0;color:#7d857a;font-size:9px;line-height:1.75}
-.reading-note{display:flex;gap:8px;margin:0;color:#929388;font-size:8px;line-height:1.6}
+.reading-step h3{margin:8px 0 6px;color:#31483a;font:500 17px/1.35 var(--serif)}
+.reading-step p{margin:0;color:#70796f;font-size:11px;line-height:1.8}
+.reading-note{display:flex;gap:8px;margin:0;color:#85877d;font-size:9px;line-height:1.65}
 .reading-note span{color:#a44736;flex:0 0 auto}
 @media(max-width:800px){.course-card{grid-template-rows:minmax(620px,auto) auto auto auto}.service-offers{grid-template-columns:1fr;gap:12px;padding:23px 25px}.service-choice{grid-template-columns:105px 1fr;gap:12px}.service-link{grid-column:2;justify-self:start}}
-@media(max-width:800px){.reading-guide{grid-template-columns:1fr 1fr}.reading-step:last-child{grid-column:1/-1}}
-@media(max-width:600px){.course-card{grid-template-rows:auto 290px auto auto auto}.service-offers{padding:22px}.services-heading{align-items:flex-start;flex-direction:column;gap:10px}.services-heading h2{font-size:21px}.service-format{font-size:7px}.service-choice{grid-template-columns:1fr;gap:8px;padding:15px}.service-index{font-size:7px}.service-copy h3{font-size:15px}.service-link{grid-column:1;margin-top:3px}.reading-guide{grid-template-columns:1fr;gap:8px}.reading-step:last-child{grid-column:auto}.reading-step{padding:12px}.reading-note{font-size:8px}}
+@media(max-width:600px){.course-card{grid-template-rows:auto 290px auto auto auto}.service-offers{padding:22px}.services-heading{align-items:flex-start;flex-direction:column;gap:10px}.services-heading h2{font-size:21px}.service-format{font-size:7px;white-space:normal}.service-choice{grid-template-columns:1fr;gap:8px;padding:15px}.service-index{font-size:7px}.service-copy h3{font-size:16px}.service-copy p{font-size:10px}.service-link{grid-column:1;margin-top:3px}.reading-guide{grid-template-columns:1fr;gap:8px}.reading-step{min-height:0;padding:14px}.reading-step h3{font-size:16px}.reading-step p{font-size:10px}.reading-note{font-size:8px}}
 
 /* Product offer */
 .price-row{display:flex;align-items:center;gap:14px;margin:-3px 0 14px;padding:0 0 2px}
